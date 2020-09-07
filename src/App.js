@@ -11,7 +11,7 @@ function App() {
       </div>
       <div className="open-source-link">
         <a
-          href="https://github.com/AnaRitaN/WeatherApp-SheCodes"
+          href="https://github.com/AnaRitaN/weather-app-react"
           target="_blank"
           rel="noopener noreferrer"
         >
