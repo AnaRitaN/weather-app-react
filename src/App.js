@@ -2,7 +2,7 @@ import React from "react";
 import Search from "./Search";
 import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <div className="container">
       <div className="App">
@@ -22,5 +22,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
