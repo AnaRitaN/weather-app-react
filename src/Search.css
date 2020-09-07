@@ -1,0 +1,47 @@
+.Search {
+  font-family: "Noto Sans HK", sans-serif;
+}
+.Search .form-inline {
+  padding: 10px 0px;
+}
+.Search .btn.btn-primary.mb-2 {
+  border: 1px solid;
+  background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+  transition: all 150ms ease-in-out;
+}
+.Search .btn.btn-primary.mb-2:hover {
+  background-image: linear-gradient(
+    to right,
+    #b8cbb8 0%,
+    #b8cbb8 0%,
+    #b465da 0%,
+    #cf6cc9 33%,
+    #ee609c 66%,
+    #ee609c 100%
+  );
+}
+.Search .btn.btn-link {
+  color: white;
+  text-align: left;
+  margin: auto 5px;
+  text-decoration: underline;
+}
+.Search .location {
+  margin: 10px auto;
+}
+.Search i.fa-map-marker-alt {
+  font-size: 60px;
+  display: block;
+  color: white;
+  text-align: left;
+  margin-top: 7px;
+}
+.Search .searchedCity {
+  color: white;
+  font-size: 13px;
+}
+.Search .searchedCity span {
+  font-size: 35px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
