@@ -1,12 +1,28 @@
 .Search {
   font-family: "Noto Sans HK", sans-serif;
 }
+.Search .row.search {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.Search .strong {
+  line-height: 20px;
+  padding-top: 20px;
+  border: 0;
+  font-size: small;
+  color: #fe019a;
+  font-family: "Source Code Pro", monospace;
+}
 .Search .form-inline {
-  padding: 10px 0px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+.Search .form-control {
+  background: rgba(255, 255, 255, 0.1);
 }
 .Search .btn.btn-primary.mb-2 {
   border: 1px solid;
-  background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+  background: rgba(255, 255, 255, 0.1);
   transition: all 150ms ease-in-out;
 }
 .Search .btn.btn-primary.mb-2:hover {
@@ -27,13 +43,15 @@
   text-decoration: underline;
 }
 .Search .location {
-  margin: 10px auto;
+  width: 100%;
+  text-align: center;
+  padding-top: 15px;
 }
 .Search i.fa-map-marker-alt {
-  font-size: 60px;
+  font-size: 50px;
   display: block;
   color: white;
-  text-align: left;
+  text-align: center;
   margin-top: 7px;
 }
 .Search .searchedCity {

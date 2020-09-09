@@ -10,16 +10,11 @@ export default function Search() {
     if (city) {
       setCityName(
         <div>
-          <div className="row location">
-            <div className="col-md-1">
-              <i className="fas fa-map-marker-alt"></i>
-            </div>
-            <div className="col-md-8">
-              <div className="searchedCity">
-                <span>{city}</span>
-                <br />
-                <div>Last updated 3 minutes ago </div>
-              </div>
+          <div className="location">
+            <div className="searchedCity">
+              <span>{city}</span>
+              <br />
+              <div>Last updated 3 minutes ago </div>
             </div>
           </div>
         </div>
@@ -33,25 +28,19 @@ export default function Search() {
   }
   return (
     <div className="Search">
-      <div className="row">
+      <div className="row search">
+        <strong className="col-md-8 strong">Weather app</strong>
         <form className="form-inline" onSubmit={handleSubmit}>
           <div className="form-group mx-sm-3 mb-2">
             <input
               type="search"
               className="form-control"
-              placeholder="❤ Search for a city"
+              placeholder="Search"
               onChange={updateCity}
             />
           </div>
-          <input
-            type="submit"
-            className="btn btn-primary mb-2"
-            value="Search"
-          />
+          <input type="submit" className="btn btn-primary mb-2" value="🔎" />
         </form>
-        <button type="button" className="btn btn-link">
-          Get weather in current location
-        </button>
       </div>
       <div>{cityName}</div>
     </div>
