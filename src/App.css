@@ -1,15 +1,17 @@
 .App .main {
   font-family: "Noto Sans HK", sans-serif;
+  background-color: rgb(33, 1, 51);
   background: black;
-  margin-top: 25px;
+  background-color: rgb(3, 0, 29);
   padding: 0px 15px 20px;
   border-radius: 10px;
   border: 0;
-  height: 100%;
-  width: 100%;
+  margin: 25px auto 10px;
+  max-width: 750px;
 }
 .App .open-source-link {
-  padding-top: 15px;
   padding-bottom: 15px;
   font-size: small;
+  margin: auto;
+  max-width: 750px;
 }
