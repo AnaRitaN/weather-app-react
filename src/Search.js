@@ -71,7 +71,7 @@ export default function Search() {
   } else {
     const apiKey = "0987205707074255a39169907ca55577";
     let tempCity = "Brussels";
-    let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${tempCity}&appid=${apiKey}&units=metric`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${tempCity}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
     return "Add spin loader";
   }
