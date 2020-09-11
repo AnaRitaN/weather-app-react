@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import FormattedDate from "./FormattedDate";
 import axios from "axios";
 import "./Search.css";
 
@@ -10,6 +11,7 @@ export default function Search() {
     setWeatherInfo({
       ready: true,
       city: response.data.name,
+      date: new Date(response.data.dt * 1000),
       temperature: response.data.main.temp,
       description: response.data.weather[0].description,
       humidity: response.data.main.humidity,
@@ -39,7 +41,9 @@ export default function Search() {
             <div className="searchedCity">
               <span>{weatherInfo.city}</span>
               <br />
-              <div>Last updated 3 minutes ago </div>
+              <div>
+                <FormattedDate date={weatherInfo.date} />
+              </div>
             </div>
           </div>
           <div className="row weather">
