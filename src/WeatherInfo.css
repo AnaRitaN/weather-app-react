@@ -1,0 +1,59 @@
+.WeatherInfo .location {
+  width: 100%;
+  text-align: center;
+  padding-top: 15px;
+}
+.WeatherInfo .searchedCity {
+  color: white;
+  font-size: 13px;
+}
+.WeatherInfo .searchedCity span {
+  font-size: 40px;
+  text-transform: capitalize;
+  font-weight: bold;
+  text-shadow: 4px 3px 5px #fe019a;
+}
+.WeatherInfo .weather {
+  margin: 50px auto;
+}
+.WeatherInfo .icon {
+  font-size: 170px;
+  text-align: right;
+  line-height: 60px;
+  padding-top: 30px;
+  color: white;
+}
+.WeatherInfo .temperature {
+  font-size: 70px;
+  color: white;
+  line-height: 60px;
+  padding-top: 10px;
+  display: inline;
+}
+.WeatherInfo .temperature.celsius,
+.WeatherInfo .temperature.fahrenheit,
+.WeatherInfo .temperature.dash {
+  font-size: 16px;
+  position: relative;
+  top: -36px;
+}
+.WeatherInfo .temperature.celsius:hover,
+.WeatherInfo .temperature.fahrenheit:hover {
+  color: #fe019a;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.WeatherInfo .sky,
+.WeatherInfo .humidityWind {
+  line-height: 20px;
+  text-align: left;
+  margin-left: 5px;
+  color: white;
+  font-size: 13px;
+}
+.WeatherInfo .sky {
+  font-size: 17px;
+}
+.WeatherInfo .sky::first-letter {
+  text-transform: capitalize;
+}
