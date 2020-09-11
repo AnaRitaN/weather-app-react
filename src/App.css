@@ -1,8 +1,8 @@
 .App .main {
-  font-family: "Noto Sans HK", sans-serif;
+  font-family: sans-serif, "Noto Sans HK";
+  background-color: rgb(3, 0, 29);
   background-color: rgb(33, 1, 51);
   background: black;
-  background-color: rgb(3, 0, 29);
   padding: 0px 15px 20px;
   border-radius: 10px;
   border: 0;

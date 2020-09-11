@@ -1,5 +1,8 @@
 .Search .row.search {
-  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px 10px 0 0;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 55%);
+  border: 0 solid black;
+  background-color: black;
 }
 
 .Search .strong {
@@ -12,7 +15,7 @@
 }
 .Search .form-inline {
   padding-top: 15px;
-  padding-bottom: 5px;
+  padding-bottom: 30px;
 }
 .Search .form-control {
   background: rgba(255, 255, 255, 0.1);
