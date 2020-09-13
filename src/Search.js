@@ -17,6 +17,7 @@ export default function Search(props) {
       description: response.data.weather[0].description,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
+      icon: response.data.weather[0].id,
     });
   }
 
@@ -42,7 +43,7 @@ export default function Search(props) {
                 onChange={handleChange}
               />
             </div>
-            <input type="submit" className="btn btn-primary mb-2" value="🔎" />
+            <input type="submit" className="btn btn-primary mb-2" value="Go" />
           </form>
         </div>
         <WeatherInfo data={weatherData} />

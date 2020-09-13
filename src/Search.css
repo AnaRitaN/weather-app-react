@@ -25,6 +25,7 @@
   border: 1px solid white;
   background: rgba(255, 255, 255, 0.1);
   transition: all 150ms ease-in-out;
+  color: grey;
 }
 .Search .btn.btn-primary.mb-2:hover {
   background: #fe019a;
