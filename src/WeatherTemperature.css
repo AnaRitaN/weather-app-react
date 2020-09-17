@@ -1,0 +1,20 @@
+.WeatherTemperature {
+  font-size: 70px;
+  color: white;
+  line-height: 60px;
+  padding-top: 10px;
+  display: inline;
+}
+.WeatherTemperature .celsius,
+.WeatherTemperature .fahrenheit,
+.WeatherTemperature .dash {
+  font-size: 16px;
+  position: relative;
+  top: -36px;
+}
+.WeatherTemperature .celsius:hover,
+.WeatherTemperature .fahrenheit:hover {
+  color: #fe019a;
+  cursor: pointer;
+  text-decoration: underline;
+}
