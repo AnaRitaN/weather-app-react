@@ -36,8 +36,8 @@ export default function Search(props) {
     return (
       <div className="Search">
         <div className="row search">
-          <strong className="col-md-6 strong">Weather app</strong>
-          <form className="form-inline col-md-6" onSubmit={handleSubmit}>
+          <strong className="col-sm-7 strong">Weather app</strong>
+          <form className="form-inline col-lg-5" onSubmit={handleSubmit}>
             <div className="form-group mx-sm-2 mb-2">
               <input
                 type="search"
@@ -48,18 +48,22 @@ export default function Search(props) {
             </div>
             <input type="submit" className="btn btn-primary mb-2" value="Go" />
           </form>
+          <span className="location">
+            <WeatherInfo data={weatherData} />
+          </span>
         </div>
-        <WeatherInfo data={weatherData} />
-        <WeatherForecast
-          cityLatitude={weatherData.latitude}
-          cityLongitude={weatherData.longitude}
-        />
+        <div className="bottomContainer">
+          <WeatherForecast
+            cityLatitude={weatherData.latitude}
+            cityLongitude={weatherData.longitude}
+          />
+        </div>
       </div>
     );
   } else {
     const apiKey = "0987205707074255a39169907ca55577";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
-    return "Add spin loader";
+    return "Loading";
   }
 }

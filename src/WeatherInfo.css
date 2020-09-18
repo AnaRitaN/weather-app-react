@@ -1,26 +1,27 @@
-.WeatherInfo .location {
-  width: 100%;
-  text-align: center;
-  padding-top: 15px;
-}
 .WeatherInfo .searchedCity {
   color: white;
   font-size: 13px;
 }
 .WeatherInfo .searchedCity span {
-  font-size: 40px;
+  font-size: 45px;
   text-transform: capitalize;
   font-weight: bold;
-  text-shadow: 4px 3px 5px #fe019a;
 }
 .WeatherInfo .weather {
-  margin: 50px auto;
+  margin: 50px auto 20px;
+  padding-bottom: 15px;
 }
 .WeatherInfo .icon {
   font-size: 150px;
   text-align: right;
   line-height: 60px;
   color: white;
+}
+.WeatherInfo .details {
+  line-height: 60px;
+  padding: 0;
+  text-align: left;
+  margin-left: 5px;
 }
 .WeatherInfo .sky,
 .WeatherInfo .humidityWind {

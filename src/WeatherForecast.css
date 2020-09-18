@@ -1,6 +1,11 @@
 .WeatherForecast .row {
-  padding-bottom: 10px;
-  padding-top: 10px;
-  font-size: 20px;
-  color: white;
+  padding-top: 5px;
+  font-size: 17px;
+  color: black;
+  margin: auto;
+}
+
+.WeatherForecast .col {
+  font-weight: bold;
+  text-align: left;
 }

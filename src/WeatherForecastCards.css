@@ -1,29 +1,20 @@
 .WeatherCardsForecast .card.weekDay {
-  border-radius: 10px;
-  background-color: rgba(0, 0, 92, 0.2);
   border: 0;
   margin: 5px -10px;
-  color: white;
+  color: black;
   text-align: center;
   line-height: 50px;
   transition: all 200ms ease-in-out;
 }
-.WeatherCardsForecast .card.weekDay:hover {
-  background-image: linear-gradient(
-    to right,
-    #b8cbb8 0%,
-    #b8cbb8 0%,
-    #b465da 0%,
-    #cf6cc9 33%,
-    #ee609c 66%,
-    #ee609c 100%
-  );
-}
 .WeatherCardsForecast .cardTemperature {
   font-size: 15px;
-  color: #dcdcdc;
+  color: rgba(0, 0, 0, 0.2);
   font-weight: bold;
 }
 .WeatherCardsForecast .maximumTemperature {
-  color: white;
+  color: black;
+}
+.WeatherCardsForecast .cardIcon {
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.5);
 }

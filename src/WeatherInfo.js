@@ -20,11 +20,11 @@ export default function WeatherInfo(props) {
         <div className="col-6 icon">
           <WeatherIcon code={props.data.icon} />
         </div>
-        <div className="col-6">
+        <div className="col-5 details">
           <WeatherTemperature celsius={props.data.temperature} />
           <div className="sky">{props.data.description}</div>
           <div className="humidityWind">
-            Humidity:{props.data.humidity}%
+            Humidity: {props.data.humidity}%
             <br />
             Wind: {props.data.wind} m/s
           </div>

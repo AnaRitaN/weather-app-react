@@ -1,38 +1,48 @@
 .Search .row.search {
-  border-radius: 10px 10px 0 0;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 55%);
-  border: 0 solid black;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+  margin: 0 0 10px;
+  max-width: 750px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 50% 18%;
+  border-bottom-right-radius: 50% 18%;
+}
+.Search .location {
+  width: 100%;
+  text-align: center;
+  padding-top: 7px;
 }
 
 .Search .strong {
   line-height: 20px;
-  padding-top: 20px;
-  border: 0;
+  padding-top: 5px;
   font-size: small;
-  color: #fe019a;
+  color: white;
   font-family: "Source Code Pro", monospace;
 }
 .Search .form-inline {
   padding-top: 15px;
-  padding-bottom: 30px;
+  padding-bottom: 5px;
 }
 .Search .form-control {
   background: rgba(255, 255, 255, 0.1);
-  box-shadow: 1px 1px #fe019a;
+  border: 0.1px solid white;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.Search .form-control::placeholder {
+  color: rgba(0, 0, 0, 0.3);
 }
 .Search .btn.btn-primary.mb-2 {
-  border: 1px solid white;
+  border: 0.1px solid white;
   background: rgba(255, 255, 255, 0.1);
   transition: all 150ms ease-in-out;
-  color: grey;
+  color: rgba(0, 0, 0, 0.3);
 }
 .Search .btn.btn-primary.mb-2:hover {
-  background: #fe019a;
+  background-color: rgb(0, 119, 255);
 }
-.Search .btn.btn-link {
-  color: white;
-  text-align: left;
-  margin: auto 5px;
-  text-decoration: underline;
+
+.Search .forecastContainer {
+  background-color: white;
 }
