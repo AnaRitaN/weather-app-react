@@ -5,7 +5,6 @@ import WeatherForecast from "./WeatherForecast";
 import "./WeatherInfo.css";
 
 export default function WeatherInfo(props) {
-  console.log(props);
   let [unit, setUnit] = useState("metric");
 
   function displayFahrenheit() {
