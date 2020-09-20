@@ -1,5 +1,5 @@
 .WeatherForecast .row {
-  padding-top: 5px;
+  padding-top: 2px;
   font-size: 17px;
   color: black;
   margin: auto;
@@ -8,4 +8,9 @@
 .WeatherForecast .col {
   font-weight: bold;
   text-align: left;
+  color: rgb(127, 127, 127);
+  line-height: 20px;
+  padding-top: 10px;
+  font-size: small;
+  font-family: "Source Code Pro", monospace;
 }

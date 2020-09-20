@@ -21,7 +21,7 @@ export default function WeatherCardsForecast(props) {
   }
 
   return (
-    <div className="WeatherCardsForecast col-md-2">
+    <div className="WeatherForecastCards col-md-2">
       <div className="card weekDay">
         <div className="cardTitle"> {getWeekDay()} </div>
         <div className="cardIcon">

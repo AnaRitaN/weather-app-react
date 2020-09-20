@@ -23,6 +23,27 @@
   text-align: left;
   margin-left: 5px;
 }
+.WeatherInfo .WeatherTemperature {
+  font-size: 70px;
+  color: white;
+  line-height: 60px;
+  padding-top: 10px;
+  display: inline;
+}
+.WeatherInfo .WeatherTemperature .celsius,
+.WeatherInfo .WeatherTemperature .fahrenheit,
+.WeatherInfo .WeatherTemperature .dash {
+  font-size: 16px;
+  position: relative;
+  top: -36px;
+}
+.WeatherInfo .WeatherTemperature .celsius:hover,
+.WeatherInfo .WeatherTemperature .fahrenheit:hover {
+  color: #fe019a;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .WeatherInfo .sky,
 .WeatherInfo .humidityWind {
   line-height: 20px;
@@ -36,4 +57,8 @@
 }
 .WeatherInfo .sky::first-letter {
   text-transform: capitalize;
+}
+
+.bottomContainer {
+  background-color: rgba(255, 255, 255);
 }

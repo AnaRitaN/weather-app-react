@@ -1,4 +1,4 @@
-.WeatherCardsForecast .card.weekDay {
+.WeatherForecastCards .card.weekDay {
   border: 0;
   margin: 5px -10px;
   color: black;
@@ -6,15 +6,20 @@
   line-height: 50px;
   transition: all 200ms ease-in-out;
 }
-.WeatherCardsForecast .cardTemperature {
+
+.WeatherForecastCards .card.weekDay:hover {
+  color: white;
+  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+}
+.WeatherForecastCards .cardTemperature {
   font-size: 15px;
   color: rgba(0, 0, 0, 0.2);
   font-weight: bold;
 }
-.WeatherCardsForecast .maximumTemperature {
+.WeatherForecastCards .maximumTemperature {
   color: black;
 }
-.WeatherCardsForecast .cardIcon {
+.WeatherForecastCards .cardIcon {
   font-size: 30px;
   color: rgba(0, 0, 0, 0.5);
 }
