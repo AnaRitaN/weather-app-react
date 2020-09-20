@@ -8,6 +8,7 @@ export default function WeatherForecast(props) {
   const [forecast, setForecast] = useState(null);
 
   function showForecast(response) {
+    console.log(props);
     setForecast(response.data);
     setLoaded(true);
   }
@@ -28,7 +29,7 @@ export default function WeatherForecast(props) {
     );
   } else {
     const apiKey = "0987205707074255a39169907ca55577";
-    let apiForecast = `https://api.openweathermap.org/data/2.5/onecall?lat=${props.cityLatitude}&lon=${props.cityLongitude}&exclude=current,minutely,hourly&appid=${apiKey}&units=metric`;
+    let apiForecast = `https://api.openweathermap.org/data/2.5/onecall?lat=${props.cityLatitude}&lon=${props.cityLongitude}&exclude=current,minutely,hourly&appid=${apiKey}&units=${props.unit}`;
     axios.get(apiForecast).then(showForecast);
     return null;
   }
