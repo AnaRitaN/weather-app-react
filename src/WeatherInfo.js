@@ -111,7 +111,7 @@ export default function WeatherInfo(props) {
           <WeatherForecast
             cityLatitude={props.data.latitude}
             cityLongitude={props.data.longitude}
-            unit="fahrenheit"
+            unit="imperial"
           />
         </div>
       </div>
